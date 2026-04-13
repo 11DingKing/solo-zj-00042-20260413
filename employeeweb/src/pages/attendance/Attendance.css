@@ -1,0 +1,138 @@
+.calendar-container {
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.calendar-weekday {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #495057;
+  border-right: 1px solid #dee2e6;
+}
+
+.calendar-weekday:last-child {
+  border-right: none;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  min-height: 80px;
+  padding: 8px;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  transition: background-color 0.2s;
+}
+
+.calendar-day:nth-child(7n) {
+  border-right: none;
+}
+
+.calendar-day:hover {
+  background-color: #f8f9fa;
+}
+
+.day-number {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.day-status {
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.day-normal {
+  background-color: #d4edda;
+}
+
+.day-normal .day-status {
+  background-color: #28a745;
+  color: white;
+}
+
+.day-late {
+  background-color: #fff3cd;
+}
+
+.day-late .day-status {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.day-early {
+  background-color: #f8d7da;
+}
+
+.day-early .day-status {
+  background-color: #dc3545;
+  color: white;
+}
+
+.day-absent {
+  background-color: #e9ecef;
+}
+
+.day-absent .day-status {
+  background-color: #6c757d;
+  color: white;
+}
+
+.day-weekend {
+  background-color: #f1f3f5;
+}
+
+.day-empty {
+  background-color: white;
+}
+
+.day-disabled {
+  background-color: #f8f9fa;
+  opacity: 0.5;
+}
+
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 0.375rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.legend-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid #dee2e6;
+}
+
+.alert {
+  margin-bottom: 1rem;
+}

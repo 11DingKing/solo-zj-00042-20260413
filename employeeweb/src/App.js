@@ -5,6 +5,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import NoMatch from "./pages/noMatch/NoMatch";
 import PostUser from "./pages/employee/PostUser";
 import UpdateUser from "./pages/employee/UpdateUser";
+import Attendance from "./pages/attendance/Attendance";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/employee" element={<PostUser />} />
         <Route path="/employee/:id" element={<UpdateUser />} />
+        <Route path="/attendance" element={<Attendance />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </>

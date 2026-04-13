@@ -19,6 +19,9 @@ const Header = () => {
             <Nav.Link as={Link} to="/employee" className="nav-link">
               Post Employee
             </Nav.Link>
+            <Nav.Link as={Link} to="/attendance" className="nav-link">
+              Attendance
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
